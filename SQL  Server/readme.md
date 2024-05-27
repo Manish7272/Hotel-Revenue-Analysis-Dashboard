@@ -1,5 +1,8 @@
 
-### we will follow the some steps to build the best portfolio as a data analyst:
+![Screenshot 2024-05-27 222314](https://github.com/Manish7272/Hotel-Revenue-Analysis-Dashboard/assets/71213166/d174a60d-04e2-46c3-9f40-3908bb2b7cff)
+
+### we will follow the some steps to build the best portfol
+io as a data analyst:
 
 1. Create a Database
 2. Query and analyze data with SQL
