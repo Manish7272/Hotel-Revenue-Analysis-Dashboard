@@ -12,70 +12,95 @@ Let’s start by creating a database in SSMS (SQL Server Management Studio) for 
 We will create a database by following these steps:
 
   - Open SQL Server Management Studio and you will see a new window on your screen.
+
 ![Screenshot 2024-05-27 203548](https://github.com/Manish7272/Hotel-Revenue-Analysis-Dashboard/assets/71213166/4b5fade3-44f3-4d57-94b1-dc0ea15254c1)
 
-
+<br>
 
   - Copy the Server Name for later use, then click on Connect.
   <br>
   
   - Now on SSMS window you will see the following options.
+<br>
+
 ![Screenshot 2024-05-27 203832](https://github.com/Manish7272/Hotel-Revenue-Analysis-Dashboard/assets/71213166/dee4a8bf-62a7-48a5-9a74-628c607e864f)
 
-
+<br>
+<br>
 
   - Right click on Databases and select New Database from the drop down.
-  - ![Screenshot 2024-05-27 203910](https://github.com/Manish7272/Hotel-Revenue-Analysis-Dashboard/assets/71213166/c40563c8-5b96-45ed-95ce-21449901b61a)
 
+![Screenshot 2024-05-27 203910](https://github.com/Manish7272/Hotel-Revenue-Analysis-Dashboard/assets/71213166/c40563c8-5b96-45ed-95ce-21449901b61a)
+
+<br>
+<br>
 
 
   - Assign a Database Name in New Database window and click OK.
+
 ![Screenshot 2024-05-27 204041](https://github.com/Manish7272/Hotel-Revenue-Analysis-Dashboard/assets/71213166/8c6ddcbe-2b77-40f4-bd0a-9a63bc8a375f)
 
-
+<br>
+<br>
 
   - Expand the Databases and you can see Project database is created.
 
 ![Screenshot 2024-05-27 204105](https://github.com/Manish7272/Hotel-Revenue-Analysis-Dashboard/assets/71213166/1230412d-17b0-4b19-a52f-dc8c019b631e)
 
-
+<br>
+<br>
 
   - In the Databases pane, right-click the Project database and select Import Data from Task drop down list.
+
 ![Screenshot 2024-05-27 204158](https://github.com/Manish7272/Hotel-Revenue-Analysis-Dashboard/assets/71213166/02599870-d598-49b4-a0f4-1252534ed8e1)
 
-
+<br>
+<br>
 
   - In the Import Data dialog box, select the data source that you want to import from.
   - Browse data file or enter path.
   - Choose the excel version you want to use and click Next.
+
 ![Screenshot 2024-05-27 204444](https://github.com/Manish7272/Hotel-Revenue-Analysis-Dashboard/assets/71213166/080b3e31-4e91-4281-b888-78db05a1bdfc)
 
-
+<br>
+<br>
   
 Note: If you are facing the following error on clicking Next just download Microsoft Access Database Engine 2016.
+
 ![Screenshot 2024-05-27 215419](https://github.com/Manish7272/Hotel-Revenue-Analysis-Dashboard/assets/71213166/bd1519a2-3920-4580-b365-5b115166584e)
 
-
+<br>
+<br>
 
   - Select a destination and verify the server and database name.
+
 ![Screenshot 2024-05-27 215537](https://github.com/Manish7272/Hotel-Revenue-Analysis-Dashboard/assets/71213166/fb6c505a-e47d-4516-ba02-1f3f612869c2)
 
+<br>
+<br>
 
   - Select tables that you want to import.
+
 ![Screenshot 2024-05-27 204818](https://github.com/Manish7272/Hotel-Revenue-Analysis-Dashboard/assets/71213166/8cf2fc8f-3804-403d-a6cb-0472e37b6fa5)
 
-
+<br>
+<br>
 
   - Now, when you run it immediately, you will see that all the data is imported into the environment.
+
 ![Screenshot 2024-05-27 210058](https://github.com/Manish7272/Hotel-Revenue-Analysis-Dashboard/assets/71213166/49337a5c-c2ec-41db-8638-927febe5ffc4)
+<br>
 
 ![Screenshot 2024-05-27 210143](https://github.com/Manish7272/Hotel-Revenue-Analysis-Dashboard/assets/71213166/f6b5095f-9f88-45d0-b65e-6a25ce278803)
 
-
+<br>
+<br>
 
   - You can then view the data in the Project database by expanding the Tables node in the Databases pane.
-![Screenshot 2024-05-27 210211](https://github.com/Manish7272/Hotel-Revenue-Analysis-Dashboard/assets/71213166/ecf5e5b4-187b-4f70-b4bc-8620ccb3dc41)
 
+![Screenshot 2024-05-27 210211](https://github.com/Manish7272/Hotel-Revenue-Analysis-Dashboard/assets/71213166/ecf5e5b4-187b-4f70-b4bc-8620ccb3dc41)
+<br>
 ![Screenshot 2024-05-27 210311](https://github.com/Manish7272/Hotel-Revenue-Analysis-Dashboard/assets/71213166/d7341ae8-8255-4e3f-aa96-03ab16f2bcd2)
 
 
@@ -86,7 +111,7 @@ Note: If you are facing the following error on clicking Next just download Micro
 <br>
 <br>
 <br>
-
+<hr>
 
 # 2. Querying data 
 We have now prepared our data tables in the database for SQL commands. Let’s now apply some commands to explore the data.
@@ -104,11 +129,13 @@ To fetch data to view from the tables, we will use the following command. The wi
 
 
 After executing the commands, the data will be displayed like this:
+
 ![Screenshot 2024-05-27 210906](https://github.com/Manish7272/Hotel-Revenue-Analysis-Dashboard/assets/71213166/67fcddf3-caff-4695-bc3b-b8b1b9f816a5)
 
+<br>
+<br>
 
-
-Combining the Data
+### Combining the Data
 To combine the data from the three tables, we simply use the UNION operator among these commands.
 
 
@@ -122,10 +149,12 @@ To combine the data from the three tables, we simply use the UNION operator amon
 ![Screenshot 2024-05-27 211139](https://github.com/Manish7272/Hotel-Revenue-Analysis-Dashboard/assets/71213166/0c7eccc4-4511-4f7d-b880-398aacddfeec)
 
 
-
-
-
-
+<br>
+<br>
+<br>
+<br>
+<br>
+<hr>
 
 
 
@@ -159,9 +188,10 @@ In our dataset we don’t have revenue, but we do have adr (Average Daily Rate),
       as revenue from hotels
 
 The revenue column is here.
+
 ![Screenshot 2024-05-27 211316](https://github.com/Manish7272/Hotel-Revenue-Analysis-Dashboard/assets/71213166/815fc15e-95cb-43e6-a042-6de10754eaf7)
 
-
+<br>
 
 Let’s bring another column arrival_date_year from the data and then calculate the sum of revenue while grouping the data by year.
 
@@ -173,9 +203,10 @@ Let’s bring another column arrival_date_year from the data and then calculate 
 
 
 Now, in the following table, we can see that the revenue increased from 2018 to 2019 but then decreased again in 2020.
+
 ![Screenshot 2024-05-27 211524](https://github.com/Manish7272/Hotel-Revenue-Analysis-Dashboard/assets/71213166/94b2879f-7f31-43ed-ad74-1f75ac332e31)
 
-
+<br>
 
 We can also determine the revenue trend by hotel type by grouping the data by hotel and then seeing which hotels have generated the most revenue.
 
@@ -183,9 +214,10 @@ We can also determine the revenue trend by hotel type by grouping the data by ho
     arrival_date_year, hotel,
     sum((stays_in_week_nights + stays_in_weekend_nights) * adr)
     as revenue from hotels group by arrival_date_year, hotel
+
 ![Screenshot 2024-05-27 211606](https://github.com/Manish7272/Hotel-Revenue-Analysis-Dashboard/assets/71213166/b1f09663-6783-45f0-b563-a70c497f5681)
 
-
+<br>
 
 ## Q.2: Should we increase our parking lot size?
 To answer this question, we will focus on the car_parking_spaces and number of guests staying in the hotel. So, let’s do it by applying the following SQL query.
@@ -199,14 +231,20 @@ To answer this question, we will focus on the car_parking_spaces and number of g
 
 
 In the next table we can observe that we have enough space for parking. So, there is no need to increase our parking lot size.
+
 ![Screenshot 2024-05-27 220227](https://github.com/Manish7272/Hotel-Revenue-Analysis-Dashboard/assets/71213166/70d1ed39-38f1-4c17-82ea-6a31cb46e387)
 
-
+<br>
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-
+<br>
+<br>
+<br>
+<br>
+<br>
+<hr>
 
 
 
@@ -241,7 +279,7 @@ Click on Get Data then select SQL Server.
 
 ![Screenshot 2024-05-27 214751](https://github.com/Manish7272/Hotel-Revenue-Analysis-Dashboard/assets/71213166/c74ab057-630e-4d58-9b2d-e448806532da)
 
-
+<br>
 
   - A new window titled SQL Server Database will appear.
   - Enter your server’s name and database name in the respective fields.
@@ -263,15 +301,17 @@ Click on Get Data then select SQL Server.
         on hotels.market_segment = market_segment$.market_segment
         left join dbo.meal_cost$
         on meal_cost$.meal = hotels.meal
+
 ![Screenshot 2024-05-27 212711](https://github.com/Manish7272/Hotel-Revenue-Analysis-Dashboard/assets/71213166/72a3f279-b4f5-429f-baa2-1bd4ccb1cb57)
 
-
+<br>
 
   - Now you can see that we have brought in our SQL information that we need.
   - Hit Load button to load the data.
+
 ![Screenshot 2024-05-27 212729](https://github.com/Manish7272/Hotel-Revenue-Analysis-Dashboard/assets/71213166/335510a9-9e16-4306-93e9-f5accc388d2f)
 
-
+<br>
 
 # Q.3: What trends can we see in the data?
 We have created some visuals using Power BI that show some possible trends. Here are a few of them:
