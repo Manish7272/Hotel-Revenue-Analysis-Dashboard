@@ -35,6 +35,7 @@ We will create a database by following these steps:
 
 
   - Expand the Databases and you can see Project database is created.
+
 ![Screenshot 2024-05-27 204105](https://github.com/Manish7272/Hotel-Revenue-Analysis-Dashboard/assets/71213166/1230412d-17b0-4b19-a52f-dc8c019b631e)
 
 
@@ -52,12 +53,12 @@ We will create a database by following these steps:
 
   
 Note: If you are facing the following error on clicking Next just download Microsoft Access Database Engine 2016.
+![Screenshot 2024-05-27 215419](https://github.com/Manish7272/Hotel-Revenue-Analysis-Dashboard/assets/71213166/bd1519a2-3920-4580-b365-5b115166584e)
 
-pic - import export error
 
 
   - Select a destination and verify the server and database name.
-pic ----------
+![Screenshot 2024-05-27 215537](https://github.com/Manish7272/Hotel-Revenue-Analysis-Dashboard/assets/71213166/fb6c505a-e47d-4516-ba02-1f3f612869c2)
 
 
   - Select tables that you want to import.
@@ -198,7 +199,7 @@ To answer this question, we will focus on the car_parking_spaces and number of g
 
 
 In the next table we can observe that we have enough space for parking. So, there is no need to increase our parking lot size.
-![Screenshot 2024-05-27 211606](https://github.com/Manish7272/Hotel-Revenue-Analysis-Dashboard/assets/71213166/371d630f-6e09-4f49-89a9-6b125694dcd1)
+![Screenshot 2024-05-27 220227](https://github.com/Manish7272/Hotel-Revenue-Analysis-Dashboard/assets/71213166/70d1ed39-38f1-4c17-82ea-6a31cb46e387)
 
 
 
