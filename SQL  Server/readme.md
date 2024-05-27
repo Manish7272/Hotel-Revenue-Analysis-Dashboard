@@ -322,6 +322,7 @@ We have created some visuals using Power BI that show some possible trends. Here
 4. The discount percentage offered by the hotel has increased from 2019 to 2020 to attract more customers.
 
 # DashBoard
+![Screenshot 2024-05-27 223204](https://github.com/Manish7272/Hotel-Revenue-Analysis-Dashboard/assets/71213166/38bcd9ae-25c9-494a-940d-d5426c692747)
 
 
 
