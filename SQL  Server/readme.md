@@ -12,36 +12,45 @@ Let’s start by creating a database in SSMS (SQL Server Management Studio) for 
 We will create a database by following these steps:
 
   - Open SQL Server Management Studio and you will see a new window on your screen.
+![Screenshot 2024-05-27 203548](https://github.com/Manish7272/Hotel-Revenue-Analysis-Dashboard/assets/71213166/4b5fade3-44f3-4d57-94b1-dc0ea15254c1)
 
-pic 1 ----------------
+
 
   - Copy the Server Name for later use, then click on Connect.
   <br>
   
   - Now on SSMS window you will see the following options.
+![Screenshot 2024-05-27 203832](https://github.com/Manish7272/Hotel-Revenue-Analysis-Dashboard/assets/71213166/dee4a8bf-62a7-48a5-9a74-628c607e864f)
 
-pic ---------------
+
 
   - Right click on Databases and select New Database from the drop down.
-pic -----------
+  - ![Screenshot 2024-05-27 203910](https://github.com/Manish7272/Hotel-Revenue-Analysis-Dashboard/assets/71213166/c40563c8-5b96-45ed-95ce-21449901b61a)
+
 
 
   - Assign a Database Name in New Database window and click OK.
+![Screenshot 2024-05-27 204041](https://github.com/Manish7272/Hotel-Revenue-Analysis-Dashboard/assets/71213166/8c6ddcbe-2b77-40f4-bd0a-9a63bc8a375f)
 
-  - pic -------------------
+
 
   - Expand the Databases and you can see Project database is created.
-pic --------------
+![Screenshot 2024-05-27 204105](https://github.com/Manish7272/Hotel-Revenue-Analysis-Dashboard/assets/71213166/1230412d-17b0-4b19-a52f-dc8c019b631e)
+
+
 
   - In the Databases pane, right-click the Project database and select Import Data from Task drop down list.
-pic - ---------------
+![Screenshot 2024-05-27 204158](https://github.com/Manish7272/Hotel-Revenue-Analysis-Dashboard/assets/71213166/02599870-d598-49b4-a0f4-1252534ed8e1)
+
 
 
   - In the Import Data dialog box, select the data source that you want to import from.
   - Browse data file or enter path.
   - Choose the excel version you want to use and click Next.
-  - pic --4 ------------
+![Screenshot 2024-05-27 204444](https://github.com/Manish7272/Hotel-Revenue-Analysis-Dashboard/assets/71213166/080b3e31-4e91-4281-b888-78db05a1bdfc)
 
+
+  
 Note: If you are facing the following error on clicking Next just download Microsoft Access Database Engine 2016.
 
 pic - import export error
@@ -52,16 +61,33 @@ pic ----------
 
 
   - Select tables that you want to import.
-pic --------------
+![Screenshot 2024-05-27 204818](https://github.com/Manish7272/Hotel-Revenue-Analysis-Dashboard/assets/71213166/8cf2fc8f-3804-403d-a6cb-0472e37b6fa5)
+
+
 
   - Now, when you run it immediately, you will see that all the data is imported into the environment.
-pic ----------------
+![Screenshot 2024-05-27 210058](https://github.com/Manish7272/Hotel-Revenue-Analysis-Dashboard/assets/71213166/49337a5c-c2ec-41db-8638-927febe5ffc4)
+
+![Screenshot 2024-05-27 210143](https://github.com/Manish7272/Hotel-Revenue-Analysis-Dashboard/assets/71213166/f6b5095f-9f88-45d0-b65e-6a25ce278803)
+
+
 
   - You can then view the data in the Project database by expanding the Tables node in the Databases pane.
-pic ------------
+![Screenshot 2024-05-27 210211](https://github.com/Manish7272/Hotel-Revenue-Analysis-Dashboard/assets/71213166/ecf5e5b4-187b-4f70-b4bc-8620ccb3dc41)
+
+![Screenshot 2024-05-27 210311](https://github.com/Manish7272/Hotel-Revenue-Analysis-Dashboard/assets/71213166/d7341ae8-8255-4e3f-aa96-03ab16f2bcd2)
 
 
-# 2. Querying data
+
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+# 2. Querying data 
 We have now prepared our data tables in the database for SQL commands. Let’s now apply some commands to explore the data.
 
 
