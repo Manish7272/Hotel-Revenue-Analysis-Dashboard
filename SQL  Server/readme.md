@@ -103,7 +103,8 @@ To fetch data to view from the tables, we will use the following command. The wi
 
 
 After executing the commands, the data will be displayed like this:
-pic ----------
+![Screenshot 2024-05-27 210906](https://github.com/Manish7272/Hotel-Revenue-Analysis-Dashboard/assets/71213166/67fcddf3-caff-4695-bc3b-b8b1b9f816a5)
+
 
 
 Combining the Data
@@ -116,7 +117,14 @@ To combine the data from the three tables, we simply use the UNION operator amon
     select * from dbo.['2019$']
     union
     select * from dbo.['2020$']
-img -=-------
+    
+![Screenshot 2024-05-27 211139](https://github.com/Manish7272/Hotel-Revenue-Analysis-Dashboard/assets/71213166/0c7eccc4-4511-4f7d-b880-398aacddfeec)
+
+
+
+
+
+
 
 
 
@@ -150,7 +158,8 @@ In our dataset we don’t have revenue, but we do have adr (Average Daily Rate),
       as revenue from hotels
 
 The revenue column is here.
-img -----------
+![Screenshot 2024-05-27 211316](https://github.com/Manish7272/Hotel-Revenue-Analysis-Dashboard/assets/71213166/815fc15e-95cb-43e6-a042-6de10754eaf7)
+
 
 
 Let’s bring another column arrival_date_year from the data and then calculate the sum of revenue while grouping the data by year.
@@ -163,8 +172,7 @@ Let’s bring another column arrival_date_year from the data and then calculate 
 
 
 Now, in the following table, we can see that the revenue increased from 2018 to 2019 but then decreased again in 2020.
-
-img -----------
+![Screenshot 2024-05-27 211524](https://github.com/Manish7272/Hotel-Revenue-Analysis-Dashboard/assets/71213166/94b2879f-7f31-43ed-ad74-1f75ac332e31)
 
 
 
@@ -174,8 +182,8 @@ We can also determine the revenue trend by hotel type by grouping the data by ho
     arrival_date_year, hotel,
     sum((stays_in_week_nights + stays_in_weekend_nights) * adr)
     as revenue from hotels group by arrival_date_year, hotel
+![Screenshot 2024-05-27 211606](https://github.com/Manish7272/Hotel-Revenue-Analysis-Dashboard/assets/71213166/b1f09663-6783-45f0-b563-a70c497f5681)
 
-img --------------
 
 
 ## Q.2: Should we increase our parking lot size?
@@ -190,10 +198,16 @@ To answer this question, we will focus on the car_parking_spaces and number of g
 
 
 In the next table we can observe that we have enough space for parking. So, there is no need to increase our parking lot size.
+![Screenshot 2024-05-27 211606](https://github.com/Manish7272/Hotel-Revenue-Analysis-Dashboard/assets/71213166/371d630f-6e09-4f49-89a9-6b125694dcd1)
 
-img -------------
+
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
 
 # 4. Create Data Visualizations Using Power BI
 Before moving to Power BI, we need to preprocess some columns.
@@ -223,7 +237,10 @@ Second Left Join: Combines the hotels table with the meal_cost table by matching
 Now open Power Bi on your PC to connect data base.
 
 Click on Get Data then select SQL Server.
-img ------------------------
+
+![Screenshot 2024-05-27 214751](https://github.com/Manish7272/Hotel-Revenue-Analysis-Dashboard/assets/71213166/c74ab057-630e-4d58-9b2d-e448806532da)
+
+
 
   - A new window titled SQL Server Database will appear.
   - Enter your server’s name and database name in the respective fields.
@@ -245,16 +262,14 @@ img ------------------------
         on hotels.market_segment = market_segment$.market_segment
         left join dbo.meal_cost$
         on meal_cost$.meal = hotels.meal
-
-img ----------
-
+![Screenshot 2024-05-27 212711](https://github.com/Manish7272/Hotel-Revenue-Analysis-Dashboard/assets/71213166/72a3f279-b4f5-429f-baa2-1bd4ccb1cb57)
 
 
 
   - Now you can see that we have brought in our SQL information that we need.
   - Hit Load button to load the data.
+![Screenshot 2024-05-27 212729](https://github.com/Manish7272/Hotel-Revenue-Analysis-Dashboard/assets/71213166/335510a9-9e16-4306-93e9-f5accc388d2f)
 
-img -------
 
 
 # Q.3: What trends can we see in the data?
@@ -266,31 +281,6 @@ We have created some visuals using Power BI that show some possible trends. Here
 4. The discount percentage offered by the hotel has increased from 2019 to 2020 to attract more customers.
 
 # DashBoard
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
