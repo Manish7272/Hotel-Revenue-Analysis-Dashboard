@@ -1,20 +1,25 @@
 
 ![Screenshot 2024-05-27 222314](https://github.com/Manish7272/Hotel-Revenue-Analysis-Dashboard/assets/71213166/d174a60d-04e2-46c3-9f40-3908bb2b7cff)
 
-### we will follow the some steps to build the best portfol
-io as a data analyst:
+### some steps to build the Dashboatrd as a data analyst:
 
 1. Create a Database
 2. Query and analyze data with SQL
 3. Integrate Power BI with a Database
 4. Create Data Visualizations Using Power BI
 
+<br>
+<br>
+
+<br>
+<hr>
+
 # 1. Create a Database
 Let’s start by creating a database in SSMS (SQL Server Management Studio) for further analysis of Hotel Booking Data.
 
 We will create a database by following these steps:
 
-  - Open SQL Server Management Studio and you will see a new window on your screen.
+  - Open SQL Server Management Studio and you will see a new window on screen.
 
 ![Screenshot 2024-05-27 203548](https://github.com/Manish7272/Hotel-Revenue-Analysis-Dashboard/assets/71213166/4b5fade3-44f3-4d57-94b1-dc0ea15254c1)
 
@@ -116,9 +121,7 @@ Note: If you are facing the following error on clicking Next just download Micro
 <br>
 <hr>
 
-# 2. Querying data 
-We have now prepared our data tables in the database for SQL commands. Let’s now apply some commands to explore the data.
-
+# 2. Querying data:
 
 We have now prepared our data tables in the database for SQL commands. Let’s now apply some commands to explore the data.
 
@@ -247,7 +250,7 @@ In the next table we can observe that we have enough space for parking. So, ther
 <br>
 <br>
 <br>
-<hr>
+
 
 
 
@@ -256,27 +259,27 @@ Before moving to Power BI, we need to preprocess some columns.
 
 Using SQL, we will perform two left join queries on the data.
 
-First Left Join: Combines the hotels table with the market_segment table by matching the market_segment column in the “hotels” table with the market_segment.market_segment column.
+- First Left Join: Combines the hotels table with the market_segment table by matching the market_segment column in the “hotels” table with the market_segment.market_segment column.
 
-Second Left Join: Combines the hotels table with the meal_cost table by matching the meal column in the hotels table and the meal_cost.meal column.
-
-
-
-    with hotels as(
-    select * from dbo.['2018$']
-    union
-    select * from dbo.['2019$']
-    union
-    select * from dbo.['2020$'])
-    
-    select * from hotels
-    left join dbo.market_segment$
-    on hotels.market_segment = market_segment$.market_segment
-    left join dbo.meal_cost$
-    on meal_cost$.meal = hotels.meal
+- Second Left Join: Combines the hotels table with the meal_cost table by matching the meal column in the hotels table and the meal_cost.meal column.
 
 
-Now open Power Bi on your PC to connect data base.
+
+      with hotels as(
+      select * from dbo.['2018$']
+      union
+      select * from dbo.['2019$']
+      union
+      select * from dbo.['2020$'])
+      
+      select * from hotels
+      left join dbo.market_segment$
+      on hotels.market_segment = market_segment$.market_segment
+      left join dbo.meal_cost$
+      on meal_cost$.meal = hotels.meal
+
+
+Now open Power Bi on PC to connect data base.
 
 Click on Get Data then select SQL Server.
 
@@ -324,7 +327,10 @@ We have created some visuals using Power BI that show some possible trends. Here
 3. Total number of nights booked by customers decreased from 2019 to 2020.
 4. The discount percentage offered by the hotel has increased from 2019 to 2020 to attract more customers.
 
-# DashBoard
+<br>
+<br>
+
+# DashBoard:
 ![Screenshot 2024-05-27 223204](https://github.com/Manish7272/Hotel-Revenue-Analysis-Dashboard/assets/71213166/38bcd9ae-25c9-494a-940d-d5426c692747)
 
 
